@@ -1,5 +1,9 @@
 package com.ws.flcweather.app;
 
+import android.content.Context;
+
+import org.litepal.LitePalApplication;
+
 /**
  * <pre>
  *     author : Administrator
@@ -9,5 +13,14 @@ package com.ws.flcweather.app;
  *     version: 1.0
  * </pre>
  */
-public class WeatherApplication {
+public class WeatherApplication extends LitePalApplication{
+	@Override
+	public void onCreate() {
+		super.onCreate();
+	}
+
+	@Override
+	protected void attachBaseContext(Context base) {
+		super.attachBaseContext(base);
+	}
 }

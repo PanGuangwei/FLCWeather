@@ -1,5 +1,9 @@
 package com.ws.flcweather.util;
 
+import android.widget.Toast;
+
+import com.ws.flcweather.app.WeatherApplication;
+
 /**
  * <pre>
  *     author : Administrator
@@ -10,4 +14,7 @@ package com.ws.flcweather.util;
  * </pre>
  */
 public class ToastUtil {
+	public static void showToast(String msg){
+		Toast.makeText(WeatherApplication.getContext(), msg,Toast.LENGTH_SHORT).show();
+	}
 }
